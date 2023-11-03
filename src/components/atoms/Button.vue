@@ -1,11 +1,17 @@
 <template>
-  <div>
-    <el-button>{{ text }}</el-button>
-  </div>
+  <el-button
+    v-bind="$class"
+    :class="
+      type === 'secondary'
+        ? 'bg-gray-50 !text-primary'
+        : 'bg-primary !text-white'
+    "
+    >{{ text }}</el-button
+  >
 </template>
 
 <script>
 export default {
-  props: ["text"],
+  props: ["text", "type", "class"],
 };
 </script>

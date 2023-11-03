@@ -1,5 +1,3 @@
-<template>
-  <h2>vacantes</h2>
-</template>
+<template></template>
 
-<script></script>
+<script setup></script>
