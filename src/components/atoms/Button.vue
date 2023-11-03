@@ -1,6 +1,5 @@
 <template>
   <el-button
-    v-bind="$class"
     :class="
       type === 'secondary'
         ? 'bg-gray-50 !text-primary'
@@ -12,6 +11,6 @@
 
 <script>
 export default {
-  props: ["text", "type", "class"],
+  props: ["text", "type"],
 };
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-12 max-h-7 items-center">
+  <div class="grid grid-cols-12 max-h-7 items-center h-7">
     <div class="col-span-9 flex w-full">
       <p class="text-purplelight">match con la cultura</p>
       <el-progress :percentage="50" class="w-full" color="#8BC34A" />

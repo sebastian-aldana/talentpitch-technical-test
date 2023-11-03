@@ -14,10 +14,8 @@
         </el-icon>
         <p>Floridablanca - Colombia</p>
       </div>
-      <div class="flex text-xs">
-        <el-icon :size="15" class="mr-2">
-          <Star />
-        </el-icon>
+      <div class="flex text-xs items-center">
+        <el-rate v-model="starScore" disabled text-color="#ff9900" />
         <p>(10 reviews)</p>
       </div>
       <div class="text-xm">
@@ -102,6 +100,8 @@
 </template>
 
 <script setup>
+import { ref } from "vue";
+const starScore = ref(4);
 import Button from "../atoms/Button.vue";
 import {
   UserFilled,
